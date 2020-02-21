@@ -27,7 +27,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Class": "pl.setblack.sha512.ShaLib"
+        attributes "Main-Class": "pl.setblack.sha512.ShaOps"
     }
 
     from {

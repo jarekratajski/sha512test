@@ -20,6 +20,10 @@ public class ShaBenchmark {
     public byte[][] jvmSha512(){
         return shaLib.shaJvm(shaData);
     }
+    @Benchmark
+    public byte[][] lessAllocJvmSha512(){
+        return shaLib.shaJvmLessAlloc(shaData);
+    }
 
     @Benchmark
     public byte[][] jvmShaBC512(){
