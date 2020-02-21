@@ -3,10 +3,10 @@ package pl.setblack.sha512;
 import org.openjdk.jmh.annotations.*;
 
 @State(Scope.Benchmark)
-@Warmup(iterations = 2)
-@Measurement(iterations = 2)
-@Fork(1)
-public class JavaBenchmark {
+@Warmup(iterations = 4)
+@Measurement(iterations = 5)
+@Fork(3)
+public class ShaBenchmark {
 
     ShaData shaData = new ShaData(128);
     ShaOps shaLib = new ShaOps();
